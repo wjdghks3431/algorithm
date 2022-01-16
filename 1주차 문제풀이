@@ -1,0 +1,70 @@
+#1
+
+score = int(input("점수 : "))
+
+if 96<= score <= 100 :
+    print('A+')
+elif 91<= score < 96:
+    print('A')
+elif 86<= score <91 :
+    print('B+')
+elif 81<= score <86:
+    print('B')
+elif 76<= score <81:
+    print('C+')
+elif 71<= score <76:
+    print('C')
+elif 66<= score <71:
+    print('D+')
+elif 61<= score <66:
+    print('D')
+elif 0<= score <61:
+    print('F')
+else:
+    print('입력값이 올바르지 않습니다.')
+ 
+   
+#2 
+   
+time = int(input('시간 : '))
+
+h = int(time / 3600)
+m = int(time / 60 - 60 * h)
+s = int(time - (3600 * h + 60 * m))
+
+print(f"{h}시간 {m}분 {s}초")
+
+
+#3
+
+a = int(input('x좌표 : '))
+b = int(input('y좌표 : '))
+
+if a > 0 and b > 0:
+    print('Quadrant1')
+if a < 0 and b > 0 :
+    print('Quadrant2')
+if a < 0 and b < 0 :
+    print('Quadrant3')
+if a > 0  and b < 0 :
+    print('Quadrant4')
+
+#4
+
+for i in range(1,2) :
+    for n in range(1,10) :
+        print(f'{i} * {n}={i*n} {i+1} * {n}={(i+1)*n} {i+2} * {n}={(i+2)*n}')
+    for n in range(1,10) :
+        print(f'{i+3} * {n}={(i+3)*n} {i+4} * {n}={(i+4)*n} {i+5} * {n}={(i+5)*n}')
+    for n in range(1,10) :
+        print(f'{i+6} * {n}={(i+6)*n} {i+7} * {n}={(i+7)*n} {i+8} * {n}={(i+8)*n}')
+
+
+
+#5
+
+s = int(input('입력 :'))
+
+print("*"*s)
+print("*"*(s-2))
+print("*")
