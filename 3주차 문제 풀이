@@ -1,0 +1,80 @@
+#1
+s= list(input())
+
+s.sort()
+print(s)
+
+#2
+s= int(input())
+q= []
+
+for i in range(s):
+    y=int(input())
+    q.append(y)
+q.sort()
+print('출력값')
+for j in range(0,s) :
+    print(q[j])
+
+#3
+
+s=int(input())
+t=[]
+def bubblesort(t):
+    n = len(t)
+    for i in range(n):
+        for j in range(0,n-i-1):
+            if t[j][0] > t[j+1][0] :
+                t[j],t[j+1]=t[j+1],t[j]
+
+
+for i in range(0,s) :
+    x = [int(input()),input()]
+    t.append(x)
+
+bubblesort(t)
+print(t)
+
+        
+
+
+#4
+
+t = []
+s = int(input())
+def bubblesort(y):
+    n = len(y)
+    for i in range(n):
+        for j in range(0,n-i-1):
+            if len(y[j]) > len(y[j+1]) :
+                y[j],y[j+1]=y[j+1],y[j]
+ 
+for i in range(s) :
+    t.append(input())
+
+x = set(t)
+y = list(x)   
+y.sort()
+bubblesort(y)
+print(y)
+
+#5
+
+s = int(input())
+t = []
+def bubblesort(t):
+    n = len(t)
+    for i in range(n):
+        for j in range(0,n-i-1):
+            if t[j] > t[j+1] :
+                t[j],t[j+1]=t[j+1],t[j]
+                
+                
+for i in range(s):
+    q = [int(input()),int(input())]
+    t.append(q)
+t.sort()
+
+bubblesort(t)
+        
+print(t)
