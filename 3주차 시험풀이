@@ -1,0 +1,48 @@
+#1
+s = int(input())
+n = 0
+for i in range(s,0,-1):
+    print(i)
+    n= n+i
+print(n)
+
+#2
+f= 0
+g= 0
+n = float(input())
+for i in range(3) :
+    
+
+    if i == 0:
+        s = float(input())
+        print(round(s-n,2))
+    
+    if i == 1:
+        g = float(input())
+        print(round(g-s,2))
+    
+    if i == 1:
+        f = float(input())
+        print(round(f-g,2))
+    
+    
+print(999)
+
+#3
+while True :
+    num1 = int(input())
+    num2 = int(input())
+    num3 = int(input())
+    if num1 == num2 == num3 :
+        print('Equilateral')
+        
+    elif num1 == num3 or num1 == num2 or num3 == num2:
+        print('Isosceles')
+        
+    elif num1 + num2 == num3 or num2 + num3 == num1 or num1+ num3 == num2:
+        print('Invalid')
+    elif num1 == 0 and num2 == 0 and num3 == 0:
+        break
+    else:
+        print('Scalene')
+    
