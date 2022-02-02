@@ -1,0 +1,43 @@
+#1
+s = int(input())
+t = []
+y = []
+for i in range(s):
+    r = int(input())
+    t.append(r)
+    
+t.sort()
+
+for j in range(0,len(t)) :
+    if t[j] <= len(t[j:]):
+        y.append(t[j])
+print(max(y))  
+#2
+
+s  = int(input())
+d= 0
+t=[s]
+while True:
+    if s==1 :
+        break
+    elif s==2 :
+        s = s - 1
+        d = d + 1
+        t.append(s)
+        break
+            
+    if s % 2 == 0 :
+        s = s / 2
+        t.append(s)
+        d = d + 1
+    elif s % 3 == 0 :
+        s = s / 3
+        t.append(s)
+        d= d + 1    
+    else :
+        s = s - 1
+        t.append(s)
+        d = d + 1
+
+print(d)
+print(t)
